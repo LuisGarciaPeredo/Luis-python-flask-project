@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Predict Student Performance</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="edad" placeholder="edad" required="required" />
+        <input type="text" name="grado" placeholder="grado" required="required" />
+		<input type="text" name="P2" placeholder="P2" required="required" />
+      <input type="text" name="P6" placeholder="P6" required="required" />
+        <input type="text" name="P12" placeholder="P12" required="required" />
+    <input type="text" name="P14" placeholder="P14" required="required" />
+      <input type="text" name="P21" placeholder="P21" required="required" />
+        <input type="text" name="P26" placeholder="P26" required="required" />
+    <input type="text" name="Intra_Cuali" placeholder="Intra_Cuali" required="required" />
+      <input type="text" name="P1" placeholder="P1" required="required" />
+        <input type="text" name="P4" placeholder="P4" required="required" />
+    <input type="text" name="P18" placeholder="P18" required="required" />
+      <input type="text" name="P23" placeholder="P23" required="required" />
+        <input type="text" name="P28" placeholder="P28" required="required" />
+    <input type="text" name="P30" placeholder="P30" required="required" />
+      <input type="text" name="Inter_Cuali" placeholder="Inter_Cuali" required="required" />
+        <input type="text" name="P5" placeholder="P5" required="required" />
+    <input type="text" name="P8" placeholder="P8" required="required" />
+      <input type="text" name="P9" placeholder="P9" required="required" />
+        <input type="text" name="P17" placeholder="P17" required="required" />
+    <input type="text" name="P27" placeholder="P27" required="required" />
+      <input type="text" name="P29" placeholder="P29" required="required" />
+        <input type="text" name="Estres_Final" placeholder="Estres_Final" required="required" />
+    <input type="text" name="Estres_Cuali" placeholder="Estres_Cuali" required="required" />
+      <input type="text" name="P10" placeholder="P10" required="required" />
+        <input type="text" name="P13" placeholder="P13" required="required" />
+    <input type="text" name="P16" placeholder="P16" required="required" />
+      <input type="text" name="P19" placeholder="P19" required="required" />
+        <input type="text" name="P22" placeholder="P22" required="required" />
+    <input type="text" name="P24" placeholder="P24" required="required" />
+      <input type="text" name="Adap_Cuali" placeholder="Adap_Cuali" required="required" />
+        <input type="text" name="P3" placeholder="P3" required="required" />
+    <input type="text" name="P7" placeholder="P7" required="required" />
+      <input type="text" name="P11" placeholder="P11" required="required" />
+        <input type="text" name="P15" placeholder="P15" required="required" />
+    <input type="text" name="P20" placeholder="P20" required="required" />
+       <input type="text" name="P25" placeholder="P25" required="required" />
+    <input type="text" name="Impre_Cuali" placeholder="Impre_Cuali" required="required" />
+      <input type="text" name="Test_Total" placeholder="Test_Total" required="required" />
+        <input type="text" name="Test_Cuanti" placeholder="Test_Cuanti" required="required" />
+    <input type="text" name="Prom_Ponderado" placeholder="Prom_Ponderado" required="required" />
+
+
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+
+   <br>
+   <br>
+   {{ Influencers_text }}
+
+   <br>
+   <br>
+
+
+{% if show_image %}
+    <img src="https://i.postimg.cc/wvqZ0RW0/Screenshot-2020-06-17-at-2-51-32-PM.png" alt="Influencing_Features" width="200" height="500">
+{% endif %}
+{% if show_image_1 %}
+    <img src="https://i.postimg.cc/rp12hkqF/Screenshot-2020-06-17-at-2-51-56-PM.png" alt="Correlation_Matrix" width="600" height="500">
+{% endif %}
+
+
+ </div>
+
+
+</body>
+</html>
