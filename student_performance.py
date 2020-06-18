@@ -4,7 +4,7 @@ import pandas as pd
 import sklearn as sk
 import seaborn as sn
 import matplotlib.pyplot as plt
-df=pd.read_csv("/Users/abhijeetgupta/Downloads/Student_performance.csv")
+df=pd.read_csv("/Users/Lenovo/Downloads/Student_performance.csv") 
 df=df.drop("nombre",axis="columns")
 df=df.drop("sexo",axis="columns")
 df=df.drop("id_Alumno",axis="columns")
