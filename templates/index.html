@@ -21,9 +21,13 @@
 </head>
 
 <body>
+	<br> <br>
     <div class="container-fluid">
-        <h1 class="text-center">FORMULARIO DE PREDICCIÓN</h1>
+        <h1 class="text-center"><font face="Time New Roman">FORMULARIO DE PREDICCIÓN</font></h1>
         <form action="{{ url_for('predict')}}" method="post">
+        	
+        	<br> <br>
+
             <div class="row mt-2">
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start">Ingrese la edad:</label>
@@ -283,13 +287,13 @@
             </div>
             <div class="row mt-2">
                 <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">31.) ¿Intrapersonal cualitativo?</label>
+                    <label class="col-md-6 justify-content-start">31.) Intrapersonal cualitativo</label>
                     <div class="col-md-2">
                         <input required name="Intra_Cuali" type="text" class="form-control">
                     </div>
                 </div>
                 <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">32.) ¿Interpersonal cualitativo?</label>
+                    <label class="col-md-6 justify-content-start">32.) Interpersonal cualitativo</label>
                     <div class="col-md-2">
                         <input required name="Inter_Cuali" type="text" class="form-control">
                     </div>
@@ -297,13 +301,13 @@
             </div>
             <div class="row mt-2">
                 <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">33.) ¿Estrés final?</label>
+                    <label class="col-md-6 justify-content-start">33.) Estrés final</label>
                     <div class="col-md-2">
                         <input required name="Estres_Final" type="text" class="form-control">
                     </div>
                 </div>
                 <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">34.) ¿Estrés cualitativo?</label>
+                    <label class="col-md-6 justify-content-start">34.) Estrés cualitativo</label>
                     <div class="col-md-2">
                         <input required name="Estres_Cuali" type="text" class="form-control">
                     </div>
@@ -311,13 +315,13 @@
             </div>
             <div class="row mt-2">
                 <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">35.) ¿Adaptabilidad cualitativo?</label>
+                    <label class="col-md-6 justify-content-start">35.) Adaptabilidad cualitativo</label>
                     <div class="col-md-2">
                         <input required name="Adap_Cuali" type="text" class="form-control">
                     </div>
                 </div>
                 <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">36.) ¿Impresión positiva cualitativo?</label>
+                    <label class="col-md-6 justify-content-start">36.) Impresión positiva cualitativo</label>
                     <div class="col-md-2">
                         <input required name="Impre_Cuali" type="text" class="form-control">
                     </div>
@@ -325,13 +329,13 @@
             </div>
             <div class="row mt-2">
                 <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">37.) ¿Total Test?</label>
+                    <label class="col-md-6 justify-content-start">37.) Total Test</label>
                     <div class="col-md-2">
                         <input required name="Test_Total" type="text" class="form-control">
                     </div>
                 </div>
                 <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">38.) ¿Test cuantitativo?</label>
+                    <label class="col-md-6 justify-content-start">38.) Test cuantitativo</label>
                     <div class="col-md-2">
                         <input required name="Test_Cuanti" type="text" class="form-control">
                     </div>
@@ -339,7 +343,7 @@
             </div>
             <div class="row mt-2">
                 <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">39.) ¿Promedio Ponderado?</label>
+                    <label class="col-md-6 justify-content-start">39.) Promedio Academico Ponderado</label>
                     <div class="col-md-2">
                         <input required name="Prom_Ponderado" type="text" class="form-control">
                     </div>
@@ -348,6 +352,7 @@
 
                 </div>
             </div>
+            <br> <br>
     </div>
     <div class="form-group mt-2">
         <button type="submit" class="btn btn-primary btn-block btn-large">Predecir</button>
