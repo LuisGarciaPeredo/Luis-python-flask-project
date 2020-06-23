@@ -6,10 +6,8 @@
     <style>
         body,
         html {
-            height: 100%;
-            background-image: url('fondo_final.jpg');
-            background-repeat: inherit;
-            background-size: cover;
+            background: rgb(255,245,226);
+background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 48%, rgba(236,240,166,1) 100%);
         }
     </style>
     <meta charset="UTF-8">
@@ -23,7 +21,7 @@
 <body>
 	<br> <br>
     <div class="container-fluid">
-        <h1 class="text-center"><font face="Time New Roman">FORMULARIO DE PREDICCIÓN</font></h1>
+        <h1 class="text-center"><font face="Time New Roman">PREDICCIÓN DE RENDIMIENTO</font></h1>
         <form action="{{ url_for('predict')}}" method="post">
         	
         	<br> <br>
