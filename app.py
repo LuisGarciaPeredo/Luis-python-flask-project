@@ -22,8 +22,8 @@ def predict():
 
 
     return render_template('index.html', 
-        prediction_text='student_performance is {} where low:0, medium:1 and high:2'.format(output),
-        Influencers_text='If student performace is poor then it is mainly due to Prom_Ponderado, Impres/Division5, Intra/Division1 - Graphs are shown below ', 
+        prediction_text='El rendimiento académico es {} donde Bajo es: 0 / Medio es: 1 / Alto es: 2'.format(output),
+        Influencers_text='Si el rendimiento del estudiante es bajo, se debe principalmente a su: Promedio Ponderado, Impres/Division5, Intra/Division1 - Los gráficos se muestran a continuación ', 
         show_image=1,show_image_1=1
         )
 
