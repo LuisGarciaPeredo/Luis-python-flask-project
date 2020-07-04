@@ -3,16 +3,108 @@
 <!--From https://codepen.io/frytyler/pen/EGdtg-->
 
 <head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
     <style>
+
+
+
+    /*  diseño de la pagina */
+
+    .latizq{
+        
+        width: 200px;
+        height: 100px;
+        background-color: #db0e0ed7;
+
+        -webkit-box-shadow: 0px 13px 14px 5px #3a3a3ae0; 
+        box-shadow: 0px 13px 14px 5px #3a3a3ae0; 
+    }
+    .latder{
+        width: 900px;
+        height: 100px;
+        background-color: #d8d8d8;
+
+        -webkit-box-shadow: 0px 13px 14px 5px #3a3a3ae0; 
+        box-shadow: 0px 13px 14px 5px #3a3a3ae0; 
+    }
+    .infizq{
+        width: 200px;
+        height: 100%;
+        background-color: #db0e0ed7;
+        margin-top: -10px;
+
+        -webkit-box-shadow: 0px 13px 14px 5px #3a3a3ae0; 
+        box-shadow: 0px 13px 14px 5px #3a3a3ae0; 
+    }
+    .infder{
+        width: 900px;
+        height: 100%;
+        background-color:#fff;
+        margin-top: -10px;
+    }
+
+    .minombre{
+        color: #fff;
+        font-size: 25px;
+        font-weight: 600;
+        padding: 15px;
+        font-family: "Groadway";
+
+        text-shadow: -4px 3px 3px #6D6D6D;
+    }
+
+    .men01{
+        background-color: #fbb36f;
+        padding: 2px;
+        border-radius: 10px;
+        width: 140px;
+
+        -webkit-box-shadow: -4px 9px 24px 5px rgba(43,43,43,0.86); 
+        box-shadow: -4px 9px 24px 5px rgba(43,43,43,0.86);
+    }
+    .submenu{
+        color: rgb(44, 44, 44);
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .imgrespon{
+        width: 80px;
+        height: 85px;
+    }
+
+    .izqimg{
+        margin-left: 5px;
+    }
+    .derimg{
+        margin-left: 800px;
+        margin-top: -120px;
+    }
+
+    .mititulo{
+        color: #000;
+        font-size: 45px;
+        font-weight: 600;
+        margin-left: 35px;
+    }
+
+
+    /*  diseño de la pagina */
+
         body,
         html {
-            background: rgb(255,245,226);
-background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 48%, rgba(236,240,166,1) 100%);
+            /* background: rgb(255,245,226);
+background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 48%, rgba(236,240,166,1) 100%); */
 
-/* background: #1AFFB3;
-background: -moz-linear-gradient(-45deg, #1AFFB3 0%, #2694DD 50%, #134A6F 100%);
-background: -webkit-linear-gradient(-45deg, #1AFFB3 0%, #2694DD 50%, #134A6F 100%);
-background: linear-gradient(135deg, #1AFFB3 0%, #2694DD 50%, #134A6F 100%); */
+            background: #FA8072;
+            background: -moz-linear-gradient(left, #FA8072 0%, #f88e82 100%);
+            background: -webkit-linear-gradient(left, #FA8072 0%, #f88e82 100%);
+            background: linear-gradient(to right, #FA8072 0%, #f88e82 100%);
         }
     </style>
     <meta charset="UTF-8">
@@ -24,9 +116,57 @@ background: linear-gradient(135deg, #1AFFB3 0%, #2694DD 50%, #134A6F 100%); */
 </head>
 
 <body>
-	<br> <br>
+    
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-2">
+                   
+                <div class="latizq"> 
+                    <center> <label class="minombre"> I.E.M SARA <br> A. BULLON</label> </center>
+                </div>
+            </div>
+            <div class="col-xs-10">
+
+                <div class="latder"> 
+                 
+                    <img src="insignia.png" class="imgrespon izqimg">
+                    <label class="mititulo"> PREDICCIÓN DE RENDIMIENTO </label>
+                    <img src="insignia.png" class="imgrespon derimg">
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-xs-2">
+                <div class="infizq">
+                    <br> <br> <br> <br>
+                    <center>
+                    <div class="men01">
+                        <label class="submenu"> Datos </label>
+                    </div>
+                    <br> <br>
+                    <div class="men01">
+                        <label class="submenu"> Resultados </label>
+                    </div>
+                    </center>
+                </div>
+            </div>
+
+            <div class="col-xs-10">
+
+                <div class="infder">
+                    
+                    <!-- <hr> -->
+
+                    <!-- <br> <br> -->
     <div class="container-fluid">
-        <h1 class="text-center"><font face="Lucida Bright">PREDICCIÓN DE RENDIMIENTO</font></h1>
+        <!-- <h1 class="text-center"><font face="Lucida Bright">PREDICCIÓN DE RENDIMIENTO</font></h1> -->
         <form action="{{ url_for('predict')}}" method="post">
         	
         	<br> <br>
@@ -374,7 +514,13 @@ background: linear-gradient(135deg, #1AFFB3 0%, #2694DD 50%, #134A6F 100%); */
     <img src="https://i.postimg.cc/wvqZ0RW0/Screenshot-2020-06-17-at-2-51-32-PM.png" alt="Influencing_Features" width="200" height="500"> {% endif %} {% if show_image_1 %}
     <img src="https://i.postimg.cc/rp12hkqF/Screenshot-2020-06-17-at-2-51-56-PM.png" alt="Correlation_Matrix" width="600" height="500"> {% endif %}
 
+                    <hr>
 
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
