@@ -5,5 +5,5 @@ $clave      = $_POST["txtclave"];
 
 if($email == 'luisgp' && $clave === '12345')
 {
-    header("location: index.html");
+    header("location: evaluacion.html");
 }

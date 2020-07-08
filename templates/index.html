@@ -1,620 +1,92 @@
 <!DOCTYPE html>
-<html>
-<!--From https://codepen.io/frytyler/pen/EGdtg-->
-
+<html lang="en">
 <head>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    
-    <style>
-
-
-
-    /*  diseño de la pagina */
-
-    .latizq{
-        
-        width: 200px;
-        height: 100px;
-        background-color: #db0e0ed7;
-
-        -webkit-box-shadow: 0px 13px 14px 5px #3a3a3ae0; 
-        box-shadow: 0px 13px 14px 5px #3a3a3ae0; 
-    }
-    .latder{
-        width: 900px;
-        height: 100px;
-        background-color: #d8d8d8;
-
-        -webkit-box-shadow: 0px 13px 14px 5px #3a3a3ae0; 
-        box-shadow: 0px 13px 14px 5px #3a3a3ae0; 
-    }
-    .infizq{
-        width: 200px;
-        height: 100%;
-        background-color: #db0e0ed7;
-        margin-top: -10px;
-
-        -webkit-box-shadow: 0px 13px 14px 5px #3a3a3ae0; 
-        box-shadow: 0px 13px 14px 5px #3a3a3ae0; 
-    }
-    .infder{
-        width: 900px;
-        height: 100%;
-        background-color:#fff;
-        margin-top: -10px;
-    }
-
-    .minombre{
-        color: #fff;
-        font-size: 25px;
-        font-weight: 600;
-        padding: 15px;
-        font-family: "Groadway";
-
-        text-shadow: -4px 3px 3px #6D6D6D;
-    }
-
-    .men01{
-        background-color: #fbb36f;
-        padding: 2px;
-        border-radius: 10px;
-        width: 140px;
-
-        -webkit-box-shadow: -4px 9px 24px 5px rgba(43,43,43,0.86); 
-        box-shadow: -4px 9px 24px 5px rgba(43,43,43,0.86);
-    }
-    .submenu{
-        color: rgb(44, 44, 44);
-        font-size: 20px;
-        font-weight: 700;
-    }
-
-    .imgrespon{
-        width: 80px;
-        height: 85px;
-    }
-
-    .izqimg{
-        margin-left: 5px;
-    }
-    .derimg{
-        margin-left: 800px;
-        margin-top: -120px;
-    }
-
-    .mititulo{
-        color: #000;
-        font-size: 45px;
-        font-weight: 600;
-        margin-left: 35px;
-    }
-
-
-    /*  diseño de la pagina */
-
-        body,
-        html {
-            /* background: rgb(255,245,226);
-background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 48%, rgba(236,240,166,1) 100%); */
-
-            background: #FA8072;
-            background: -moz-linear-gradient(left, #FA8072 0%, #f88e82 100%);
-            background: -webkit-linear-gradient(left, #FA8072 0%, #f88e82 100%);
-            background: linear-gradient(to right, #FA8072 0%, #f88e82 100%);
-        }
-    </style>
-    <meta charset="UTF-8">
-    <title>ML API</title>
-    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-    <!-- CSS only -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+	<title>Logueo Personalizado</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="Logueo/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="Logueo/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="Logueo/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="Logueo/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="Logueo/vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="Logueo/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="Logueo/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="Logueo/vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="Logueo/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="Logueo/css/util.css">
+	<link rel="stylesheet" type="text/css" href="Logueo/css/main.css">
+<!--===============================================================================================-->
 </head>
-
 <body>
-    
-    <br>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-form-title" style="background-image: url(images/bg-01.jpg);">
+					<span class="login100-form-title-1">
+						Sign In
+					</span>
+				</div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-2">
-                   
-                <div class="latizq"> 
-                    <center> <label class="minombre"> I.E.M SARA <br> A. BULLON</label> </center>
-                </div>
-            </div>
-            <div class="col-xs-10">
+				<form class="login100-form validate-form" action="sesion.controlador.php" method="post">
+					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+						<span class="label-input100">Username</span>
+						<input class="input100" type="text" name="txtusername" placeholder="Ingrese Usuario">
+						<span class="focus-input100"></span>
+					</div>
 
-                <div class="latder"> 
-                 
-                    <img src="insignia.png" class="imgrespon izqimg">
-                    <label class="mititulo"> PREDICCIÓN DE RENDIMIENTO </label>
-                    <img src="insignia.png" class="imgrespon derimg">
-                    
-                </div>
+					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+						<span class="label-input100">Password</span>
+						<input class="input100" type="password" name="txtclave" placeholder="Ingrese Contraseña">
+						<span class="focus-input100"></span>
+					</div>
 
-            </div>
-        </div>
+					<div class="flex-sb-m w-full p-b-30">
+						<div class="contact100-form-checkbox">
+							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+							<label class="label-checkbox100" for="ckb1">
+								Remember me
+							</label>
+						</div>
 
-        <br>
+					</div>
 
-        <div class="row">
-            <div class="col-xs-2">
-                <div class="infizq">
-                    <br> <br> <br> <br>
-                    <center>
-                    <div class="men01">
-                        <label class="submenu"> Datos </label>
-                    </div>
-                    <br> <br>
-                    <div class="men01">
-                        <label class="submenu"> Resultados </label>
-                    </div>
-                    </center>
-                </div>
-            </div>
-
-            <div class="col-xs-10">
-
-                <div class="infder">
-                    
-                    <!-- <hr> -->
-
-                    <!-- <br> <br> -->
-    <div class="container-fluid">
-        <!-- <h1 class="text-center"><font face="Lucida Bright">PREDICCIÓN DE RENDIMIENTO</font></h1> -->
-        <form action="{{ url_for('predict')}}" method="post">
-        	
-        	<br> <br>
-
-            <div class="row mt-2">
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start"> <STRONG> Ingrese la edad:</STRONG></label>
-                    <div class="col-md-2">
-                        <input placeholder="11/12/13/14" required name="edad" type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start"> <STRONG> Ingrese el grado escolar:</STRONG> </label>
-                    <div class="col-md-2">
-                        <input placeholder="1/2/3" required name="grado" type="text" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-2">
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">1.) ¿Me importa lo que les sucede a las
-            personas?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P1" type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">2.) ¿Es fácil decirle a la gente cómo me
-            siento?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P2" type="text" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-2">
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">3.) ¿Me gustan todas las personas que
-            conozco?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P3" type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">4.) ¿Soy capaz de respetar a los
-            demás?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P4" type="text" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-2">
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">5.) ¿Me molesto demasiado de cualquier
-            cosa?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P5" type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">6.) ¿Puedo hablar fácilmente sobre mis
-            sentimientos?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P6" type="text" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-2">
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">7.) ¿Pienso bien de todas las
-            personas?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P7" type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">8.) ¿Peleo con la gente?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P8" type="text" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-2">
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">9.) ¿Tengo mal genio?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P9" type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">10.) ¿Puedo comprender preguntas
-            difíciles?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P10" type="text" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-2">
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">11.) ¿Nada me molesta?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P11" type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">12.) ¿Es difícil hablar sobre mis sentimientos
-            más?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P12" type="text" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-2">
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">13.) ¿Puedo dar buenas respuestas a
-            preguntas?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P13" type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">14.) ¿Puedo fácilmente describir mis
-            sentimientos?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P14" type="text" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-2">
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">15.) ¿Debo decir siempre la verdad?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P15" type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">16.) ¿Puedo tener muchas maneras de responder
-            una
-            pregunta difícil, cuando yo quiero?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P16" type="text" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-2">
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">17.) ¿Me molesto fácilmente?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P17" type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">18.) ¿Me agrada hacer cosas para los
-            demás?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P18" type="text" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-2">
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">19.) ¿Puedo usar fácilmente diferentes modos
-            de
-            resolver los problemas?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P19" type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">20.) ¿Pienso que soy el (la) mejor en todo lo
-            que
-            hago?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P20" type="text" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-2">
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">21.) ¿Para mí es fácil decirle a las personas
-            cómo
-            me
-            siento?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P21" type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">22.) ¿Cuando respondo preguntas difíciles
-            trato de
-            pensar en muchas soluciones?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P22" type="text" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-2">
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">23.) ¿Me siento mal cuando las personas son
-            heridas
-            en
-            sus sentimientos?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P23" type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">24.) ¿Soy bueno (a) resolviendo
-            problemas?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P24" type="text" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-2">
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">25.) ¿No tengo días malos?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P25" type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">26.) ¿Me es difícil decirle a los demás mis
-            sentimientos?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P26" type="text" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-2">
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">27.) ¿Me fastidio fácilmente.?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P27" type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">28.) ¿Puedo darme cuenta cuando mi amigo se
-            siente
-            triste?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P28" type="text" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-2">
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">29.) ¿Cuando me molesto actúo sin
-            pensar?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P29" type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">30.) ¿Sé cuando la gente está molesta aún
-            cuando no
-            dicen nada?</label>
-                    <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P30" type="text" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-2">
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">31.) Intrapersonal cualitativo</label>
-                    <div class="col-md-2">
-                        <input placeholder="1/2/3" required name="Intra_Cuali" type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">32.) Interpersonal cualitativo</label>
-                    <div class="col-md-2">
-                        <input placeholder="1/2/3" required name="Inter_Cuali" type="text" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-2">
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">33.) Estrés final</label>
-                    <div class="col-md-2">
-                        <input placeholder="---" required name="Estres_Final" type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">34.) Estrés cualitativo</label>
-                    <div class="col-md-2">
-                        <input placeholder="1/2/3" required name="Estres_Cuali" type="text" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-2">
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">35.) Adaptabilidad cualitativo</label>
-                    <div class="col-md-2">
-                        <input placeholder="1/2/3" required name="Adap_Cuali" type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">36.) Impresión positiva cualitativo</label>
-                    <div class="col-md-2">
-                        <input placeholder="1/2/3" required name="Impre_Cuali" type="text" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-2">
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">37.) Total Test</label>
-                    <div class="col-md-2">
-                        <input placeholder="---" required name="Test_Total" type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">38.) Test cuantitativo</label>
-                    <div class="col-md-2">
-                        <input placeholder="1/2/3" required name="Test_Cuanti" type="text" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-2">
-                <div class="col-md-6 form-inline">
-                    <label class="col-md-6 justify-content-start">39.) Promedio Academico Ponderado</label>
-                    <div class="col-md-2">
-                        <input placeholder="--" required name="Prom_Ponderado" type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="col-md-6 form-inline">
-
-                </div>
-            </div>
-            <br> <br>
-    </div>
-    <div class="form-group mt-2">
-        <button type="submit" class="btn btn-primary btn-block btn-large">Predecir</button>
-    </div>
-    </form>
-
-    <br>
-    <br> {{ prediction_text }}
-
-
-    <br>
-    <br> {{ Influencers_text }}
-
-    <br>
-    <br> {% if show_image %}
-    <img src="https://i.postimg.cc/wvqZ0RW0/Screenshot-2020-06-17-at-2-51-32-PM.png" alt="Influencing_Features" width="200" height="500"> {% endif %} {% if show_image_1 %}
-    <img src="https://i.postimg.cc/rp12hkqF/Screenshot-2020-06-17-at-2-51-56-PM.png" alt="Correlation_Matrix" width="600" height="500"> {% endif %}
-
-                    <hr>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Login
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+<!--===============================================================================================-->
+	<script src="Logueo/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="Logueo/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="Logueo/vendor/bootstrap/js/popper.js"></script>
+	<script src="Logueo/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="Logueo/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="Logueo/vendor/daterangepicker/moment.min.js"></script>
+	<script src="Logueo/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="Logueo/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="Logueo/js/main.js"></script>
 
 </body>
-
 </html>
-
-
-
-<!-- 
-<div class="container">
-  
-  <form>
-    <div class="form-group row">
-      
-    </div>
-    <div class="form-group row">
-      
-    </div>
-    <div class="form-group row">
-      
-    </div>
-    <div class="form-group row">
-      
-    </div>
-    <div class="form-group row">
-      
-    </div>
-    <div class="form-group row">
-      
-    </div>
-    <div class="form-group row">
-      
-    </div>
-    <div class="form-group row">
-      
-    </div>
-    <div class="form-group row">
-      
-    </div>
-    <div class="form-group row">
-      
-    </div>
-    <div class="form-group row">
- 
-    </div>
-    <div class="form-group row">
-      
-    </div>
-    <div class="form-group row">
-      
-    </div>
-    <div class="form-group row">
-      
-    </div>
-    <div class="form-group row">
-      
-    </div>
-    <div class="form-group row">
-      
-    </div>
-    <div class="form-group row">
-      
-    </div>
-    <div class="form-group row">
-     
-    </div>
-    <div class="form-group row">
-      
-    </div>
-    <div class="form-group row">
-      
-    </div>
-    <div class="form-group row">
-     
-    </div>
-    <div class="form-group row">
-      
-    </div>
-    <div class="form-group row">
-      
-    </div>
-    <div class="form-group row">
-     
-    </div>
-    <div class="form-group row">
-     
-    </div>
-    <div class="form-group row">
-     
-    </div>
-    <div class="form-group row">
-      
-    </div>
-    <div class="form-group row">
-      
-    </div>
-  </form>
-</div> -->
