@@ -175,13 +175,15 @@ background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 4
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start"> <STRONG> Ingrese la edad:</STRONG></label>
                     <div class="col-md-2">
-                        <input placeholder="11/12/13/14" required name="edad" type="text" class="form-control">
+                        <input placeholder="11/12/13/14" required name="edad" type="text" class="form-control"
+                        maxlength="2" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start"> <STRONG> Ingrese el grado escolar:</STRONG> </label>
                     <div class="col-md-2">
-                        <input placeholder="1/2/3" required name="grado" type="text" class="form-control">
+                        <input placeholder="1/2/3" required name="grado" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 51'>
                     </div>
                 </div>
             </div>
