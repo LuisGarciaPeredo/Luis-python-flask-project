@@ -169,6 +169,10 @@ background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 4
         <!-- <h1 class="text-center"><font face="Lucida Bright">PREDICCIÓN DE RENDIMIENTO</font></h1> -->
         <form action="{{ url_for('predict')}}" method="post">
         	
+            <br> <br>
+
+            <center><h3>INGRESAR DATOS ESTABLECIDOS PARA PREDICCIÓN</h3></center> 
+
         	<br> <br>
 
             <div class="row mt-2">
@@ -192,14 +196,16 @@ background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 4
                     <label class="col-md-6 justify-content-start">1.) ¿Me importa lo que les sucede a las
             personas?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P1" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P1" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start">2.) ¿Es fácil decirle a la gente cómo me
             siento?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P2" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P2" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
             </div>
@@ -208,14 +214,16 @@ background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 4
                     <label class="col-md-6 justify-content-start">3.) ¿Me gustan todas las personas que
             conozco?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P3" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P3" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start">4.) ¿Soy capaz de respetar a los
             demás?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P4" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P4" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
             </div>
@@ -224,14 +232,16 @@ background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 4
                     <label class="col-md-6 justify-content-start">5.) ¿Me molesto demasiado de cualquier
             cosa?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P5" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P5" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start">6.) ¿Puedo hablar fácilmente sobre mis
             sentimientos?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P6" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P6" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
             </div>
@@ -240,13 +250,15 @@ background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 4
                     <label class="col-md-6 justify-content-start">7.) ¿Pienso bien de todas las
             personas?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P7" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P7" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start">8.) ¿Peleo con la gente?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P8" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P8" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
             </div>
@@ -254,14 +266,16 @@ background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 4
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start">9.) ¿Tengo mal genio?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P9" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P9" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start">10.) ¿Puedo comprender preguntas
             difíciles?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P10" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P10" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
             </div>
@@ -269,14 +283,16 @@ background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 4
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start">11.) ¿Nada me molesta?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P11" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P11" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start">12.) ¿Es difícil hablar sobre mis sentimientos
             más?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P12" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P12" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
             </div>
@@ -285,14 +301,16 @@ background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 4
                     <label class="col-md-6 justify-content-start">13.) ¿Puedo dar buenas respuestas a
             preguntas?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P13" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P13" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start">14.) ¿Puedo fácilmente describir mis
             sentimientos?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P14" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P14" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
             </div>
@@ -300,7 +318,8 @@ background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 4
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start">15.) ¿Debo decir siempre la verdad?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P15" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P15" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
                 <div class="col-md-6 form-inline">
@@ -308,7 +327,8 @@ background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 4
             una
             pregunta difícil, cuando yo quiero?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P16" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P16" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
             </div>
@@ -316,14 +336,16 @@ background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 4
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start">17.) ¿Me molesto fácilmente?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P17" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P17" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start">18.) ¿Me agrada hacer cosas para los
             demás?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P18" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P18" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
             </div>
@@ -333,7 +355,8 @@ background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 4
             de
             resolver los problemas?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P19" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P19" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
                 <div class="col-md-6 form-inline">
@@ -341,7 +364,8 @@ background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 4
             que
             hago?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P20" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P20" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
             </div>
@@ -352,7 +376,8 @@ background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 4
             me
             siento?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P21" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P21" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
                 <div class="col-md-6 form-inline">
@@ -360,7 +385,8 @@ background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 4
             trato de
             pensar en muchas soluciones?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P22" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P22" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
             </div>
@@ -371,14 +397,16 @@ background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 4
             en
             sus sentimientos?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P23" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P23" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start">24.) ¿Soy bueno (a) resolviendo
             problemas?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P24" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P24" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
             </div>
@@ -386,14 +414,16 @@ background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 4
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start">25.) ¿No tengo días malos?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P25" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P25" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start">26.) ¿Me es difícil decirle a los demás mis
             sentimientos?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P26" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P26" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
             </div>
@@ -401,7 +431,8 @@ background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 4
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start">27.) ¿Me fastidio fácilmente.?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P27" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P27" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
                 <div class="col-md-6 form-inline">
@@ -409,7 +440,8 @@ background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 4
             siente
             triste?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P28" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P28" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
             </div>
@@ -418,7 +450,8 @@ background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 4
                     <label class="col-md-6 justify-content-start">29.) ¿Cuando me molesto actúo sin
             pensar?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P29" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P29" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
                 <div class="col-md-6 form-inline">
@@ -426,7 +459,8 @@ background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 4
             cuando no
             dicen nada?</label>
                     <div class="col-md-2">
-                        <input placeholder="1-2-3-4" required name="P30" type="text" class="form-control">
+                        <input placeholder="1-2-3-4" required name="P30" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 52'>
                     </div>
                 </div>
             </div>
@@ -434,13 +468,15 @@ background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 4
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start">31.) Intrapersonal cualitativo</label>
                     <div class="col-md-2">
-                        <input placeholder="1/2/3" required name="Intra_Cuali" type="text" class="form-control">
+                        <input placeholder="1/2/3" required name="Intra_Cuali" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 51'>
                     </div>
                 </div>
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start">32.) Interpersonal cualitativo</label>
                     <div class="col-md-2">
-                        <input placeholder="1/2/3" required name="Inter_Cuali" type="text" class="form-control">
+                        <input placeholder="1/2/3" required name="Inter_Cuali" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 51'>
                     </div>
                 </div>
             </div>
@@ -448,13 +484,14 @@ background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 4
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start">33.) Estrés final</label>
                     <div class="col-md-2">
-                        <input placeholder="---" required name="Estres_Final" type="text" class="form-control">
+                        <input placeholder="---" required name="Estres_Final" type="text" class="form-control"
+                        maxlength="3" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
                     </div>
                 </div>
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start">34.) Estrés cualitativo</label>
                     <div class="col-md-2">
-                        <input placeholder="1/2/3" required name="Estres_Cuali" type="text" class="form-control">
+                        <input placeholder="1/2/3" required name="Estres_Cuali" type="text" class="form-control"maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 51'>
                     </div>
                 </div>
             </div>
@@ -462,13 +499,15 @@ background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 4
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start">35.) Adaptabilidad cualitativo</label>
                     <div class="col-md-2">
-                        <input placeholder="1/2/3" required name="Adap_Cuali" type="text" class="form-control">
+                        <input placeholder="1/2/3" required name="Adap_Cuali" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 51'>
                     </div>
                 </div>
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start">36.) Impresión positiva cualitativo</label>
                     <div class="col-md-2">
-                        <input placeholder="1/2/3" required name="Impre_Cuali" type="text" class="form-control">
+                        <input placeholder="1/2/3" required name="Impre_Cuali" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 51'>
                     </div>
                 </div>
             </div>
@@ -476,13 +515,15 @@ background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 4
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start">37.) Total Test</label>
                     <div class="col-md-2">
-                        <input placeholder="---" required name="Test_Total" type="text" class="form-control">
+                        <input placeholder="---" required name="Test_Total" type="text" class="form-control"
+                        maxlength="3" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
                     </div>
                 </div>
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start">38.) Test cuantitativo</label>
                     <div class="col-md-2">
-                        <input placeholder="1/2/3" required name="Test_Cuanti" type="text" class="form-control">
+                        <input placeholder="1/2/3" required name="Test_Cuanti" type="text" class="form-control"
+                        maxlength="1" onkeypress='return event.charCode >= 49 && event.charCode <= 51'>
                     </div>
                 </div>
             </div>
@@ -490,7 +531,8 @@ background: linear-gradient(90deg, rgba(255,245,226,1) 9%, rgba(218,255,253,1) 4
                 <div class="col-md-6 form-inline">
                     <label class="col-md-6 justify-content-start">39.) Promedio Academico Ponderado</label>
                     <div class="col-md-2">
-                        <input placeholder="--" required name="Prom_Ponderado" type="text" class="form-control">
+                        <input placeholder="--" required name="Prom_Ponderado" type="text" class="form-control"
+                        maxlength="2" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
                     </div>
                 </div>
                 <div class="col-md-6 form-inline">
