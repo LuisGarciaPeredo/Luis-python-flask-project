@@ -4,6 +4,7 @@ import pickle
 
 app = Flask(__name__)
 model = pickle.load(open('student_performance.pkl', 'rb'))
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     error = None
@@ -17,7 +18,7 @@ def login():
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('index1.html')
 
 @app.route('/predict',methods=['POST'])
 def predict():
@@ -31,7 +32,7 @@ def predict():
     output = round(prediction[0], 2)
 
 
-    return render_template('index.html', 
+    return render_template('index1.html', 
         prediction_text='El rendimiento académico es {} donde Bajo es: 0 / Medio es: 1 / Alto es: 2'.format(output),
         Influencers_text='Si el rendimiento del estudiante es bajo, se debe principalmente a su: Promedio Ponderado, Impres/Division5, Intra/Division1 - Los gráficos se muestran a continuación ', 
         show_image=1,show_image_1=1
