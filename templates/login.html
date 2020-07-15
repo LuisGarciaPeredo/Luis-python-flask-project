@@ -1,23 +1,106 @@
 <html>
   <head>
-    <title>INGRESO SISTEMA</title>
+    <title>INGRESO SISTEMA</title>    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+    
+    <style>
+      body{
+        background: #C1FFF7;
+      }
+
+    /* LAPTOP */
+    @media (min-width:1250px) {
+      .cajamayor{
+        background-image: url(fondo.png);
+        width: 850px;
+        height: 480px;
+        margin-left: 350px;
+        margin-top: 100px;
+        -webkit-box-shadow: 1px 9px 15px 0px rgba(0,0,0,0.88); 
+        box-shadow: 1px 9px 15px 0px rgba(0,0,0,0.88);
+        border-top-left-radius: 20px ;
+        border-top-right-radius: 20px ;
+        border-bottom-left-radius: 20px ;
+        border-bottom-right-radius: 20px ;
+      }
+      .margensup{
+        height: 50px;
+      }
+      .titulo{
+        font-size: 50px;
+        font-family: "sans-serif";
+        font-weight: 600;
+        padding-top: 20px;
+        margin-left: 250px;
+        color: white;
+      }
+      .cajasdetexto{
+        margin-left: 520px;
+        margin-top: 80px;
+      }
+      .form-control{
+        font-size: 20px;
+      }
+
+      .btnmiboton {
+      margin-left: 40px;
+      margin-top: 5px;
+      color: rgb(0, 0, 0); font-size: 17px; line-height: 17px; padding: 10px; border-radius: 10px; 
+      font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; 
+      font-variant: normal; text-transform: none; background-image: 
+      linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%); box-shadow: rgba(0, 0, 0, 0.88) 1px 9px 15px 0px; 
+      border: none; display: inline-block; 
+      -webkit-box-shadow: 1px 9px 15px 0px rgba(0,0,0,0.88); 
+      box-shadow: 1px 9px 15px 0px rgba(0,0,0,0.88);
+      cursor: pointer;}
+      .btnmiboton:hover {
+      background: #d0d0d0; }
+      .btnmiboton:active {
+      background: #bababa;
+      color: white; }
+
+      .cajaerror{
+        margin-top: 60px;
+        margin-left: 285px;
+      }
+    }
+
+    </style>
+
   </head>
   <body>
+
     <div class="container">
-      <h1>Por favor Registrese</h1>
-      <br>
-      <form action="" method="post">
-        <input type="text" placeholder="Username" name="username" value="{{
-          request.form.username }}">
-         <input type="password" placeholder="Password" name="password" value="{{
-          request.form.password }}">
-        <input class="btn btn-default" type="submit" value="Login">
-      </form>
-      {% if error %}
-        <p class="error"><strong>Error:</strong> {{ error }}
-      {% endif %}
+
+      <div class="cajamayor">
+        <div class="margensup"> </div>
+        <center> <label class="titulo">Iniciar Sesion</label> </center>
+        <br>
+
+        <div class="cajasdetexto">
+          <form action="" method="post">
+            <input type="text" class="form-control" size="12" placeholder="Username" name="username" value="{{
+              request.form.username }}"> <br> <br>
+            <input type="password" class="form-control" size="12" placeholder="Password" name="password" value="{{
+              request.form.password }}"> <br> <br>
+            <input class="btnmiboton" type="submit" value="Ingresar">
+          </form>
+        </div>
+        
+        <div class="cajaerror">
+          {% if error %}
+          <p class="error"><strong>Error:</strong> {{ error }}
+        {% endif %}
+        </div>
+        
+      </div>
+
+
+
+      
+
     </div>
+
   </body>
 </html>
