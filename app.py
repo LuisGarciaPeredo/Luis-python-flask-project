@@ -33,8 +33,8 @@ def predict():
 
 
     return render_template('index.html', 
-        prediction_text='El rendimiento académico es {} donde Bajo es: 0 / Medio es: 1 / Alto es: 2'.format(output),
-        Influencers_text='Si el rendimiento del estudiante es bajo, se debe principalmente a su: Promedio Ponderado, Impres/Division5, Intra/Division1 - Los gráficos se muestran a continuación ', 
+        prediction_text='El rendimiento académico del estudiante es {} donde: Bajo es 0 / Medio es 1 / Alto es 2'.format(output),
+        Influencers_text='Según data evaluada por el algoritmo, el rendimiento del estudiante se ve influenciado principalmente por: Division5/IMPRESIÓN P., Division1/INTRAPERSONAL, PROMEDIO PONDERADO - Los gráficos se muestran a continuación: ', 
         show_image=1,show_image_1=1
         )
 
